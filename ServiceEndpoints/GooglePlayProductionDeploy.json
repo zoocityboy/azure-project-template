@@ -1,0 +1,16 @@
+{
+  "data": {},
+  "name": "GooglePlayProductionDeploy",
+  "type": "google-play",
+  "url": "https://accounts.google.com/o/oauth2/v2/auth",
+  "authorization": {
+    "parameters": {
+      "username": "template@embedit.com",
+      "password": "password"
+    },
+    "scheme": "UsernamePassword"
+  },
+  "isShared": false,
+  "isReady": true,
+  "owner": "Library"
+}

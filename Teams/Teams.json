@@ -1,0 +1,20 @@
+[
+  {
+    "id": "08f76008-3236-46ed-829a-c1619fffcd46",
+    "name": "project-template Team",
+    "description": "The default project team.",
+    "isDefault": "true"
+  },
+  {
+    "id": "5e867723-a1a1-4b33-8d6f-e418bf73da1e",
+    "name": "Infra Team",
+    "description": "",
+    "isDefault": "false"
+  },
+  {
+    "id": "e87241c5-bfb4-4a88-97bd-ba76b5e2c029",
+    "name": "Mobile Platform Team",
+    "description": "",
+    "isDefault": "false"
+  }
+]

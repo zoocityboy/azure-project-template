@@ -1,0 +1,135 @@
+{
+  "count": 2,
+  "value": [
+    {
+      "id": 133889,
+      "rev": 4,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "User Story",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T07:48:06.41Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:11:48.853Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "Azure Project post actions",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": "<div>as a project lead i want to have ready for use whole Azure Project </div><div><br> </div>",
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133893",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133894",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133891",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133892",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133889"
+    },
+    {
+      "id": 133890,
+      "rev": 3,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "User Story",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T07:48:19.167Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:11:34.76Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "Mobile application",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133953",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133952",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133954",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        },
+        {
+          "rel": "System.LinkTypes.Hierarchy-Forward",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133955",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Child"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133890"
+    }
+  ],
+  "HttpStatusCode": 0,
+  "Message": null
+}

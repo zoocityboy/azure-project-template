@@ -1,0 +1,285 @@
+{
+  "source": "userInterface",
+  "revision": 4,
+  "description": null,
+  "createdBy": "{}",
+  "createdOn": "",
+  "modifiedBy": "{}",
+  "modifiedOn": "",
+  "isDeleted": false,
+  "isDisabled": false,
+  "variables": {},
+  "variableGroups": [
+    "$app_signing_android_development$"
+  ],
+  "environments": [
+    {
+      "id": 30,
+      "name": "iOS - Google Services",
+      "rank": 1,
+      "owner": {
+        "displayName": "$OwnerDisplayName$",
+        "url": "",
+        "_links": "{}",
+        "id": "$OwnerId$",
+        "uniqueName": "$OwnerUniqueName$",
+        "imageUrl": "",
+        "descriptor": ""
+      },
+      "variables": {},
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 88
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": "beforeGates"
+        }
+      },
+      "deployStep": {
+        "id": 89
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 90
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": "afterSuccessfulGates"
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": "none"
+            },
+            "agentSpecification": {
+              "identifier": "ubuntu-22.04"
+            },
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": []
+            },
+            "queueId": "$Azure Pipelines$",
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": "agentBasedDeployment",
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "b832bec5-8c27-4fef-9fb8-6bec8524ad8a",
+              "version": "3.*",
+              "name": "Deploy iOS Google to Visual Studio App Center",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "serverEndpoint": "ca81d0aa-afff-433c-8e34-007e710dfecb",
+                "appSlug": "project-template/mobileapp-ios-dev",
+                "app": "$(System.DefaultWorkingDirectory)/_mobile-app/ios-app-ipa/artifact/app.ipa",
+                "buildVersion": "",
+                "symbolsType": "Apple",
+                "symbolsPath": "",
+                "appxsymPath": "",
+                "dsymPath": "$(System.DefaultWorkingDirectory)/_mobile-app/ios-app-ipa/symbols/app.ios-arm64.symbols",
+                "mappingTxtPath": "$(System.DefaultWorkingDirectory)/_mobile-app/android-app-appbundle/mapping/mapping.txt",
+                "nativeLibrariesPath": "",
+                "packParentFolder": "false",
+                "releaseNotesSelection": "input",
+                "releaseNotesInput": "New build of app available for internal testing\n\n- fix: reported bugs from last sprint \n- feat: adding new features from last sprint",
+                "releaseNotesFile": "$(System.DefaultWorkingDirectory)/_mobile-app/android-app-appbundle/notes/ReleaseNotes.md",
+                "isMandatory": "false",
+                "destinationType": "groups",
+                "destinationGroupIds": "",
+                "destinationStoreId": "",
+                "isSilent": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": "event",
+          "value": "",
+          "result": null
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "currentRelease": {
+        "id": 0,
+        "url": "https://vsrm.dev.azure.com/hci-iap/c4f0a802-fca5-4e76-aa19-3dbd344b0b45/_apis/Release/releases/0",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": ""
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "$ProjectId$:$mobile-app-build-ios-id$",
+      "type": "Build",
+      "alias": "_mobile-app",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": "{}",
+        "defaultVersionBranch": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionSpecific": {
+          "id": "",
+          "name": ""
+        },
+        "defaultVersionTags": {
+          "id": "test; development; google; ios",
+          "name": "test; development; google; ios"
+        },
+        "defaultVersionType": {
+          "id": "latestWithBuildDefinitionBranchAndTagsType",
+          "name": "Latest from the build pipeline default branch with tags"
+        },
+        "definition": {
+          "id": "$mobile-app-build-ios-id$",
+          "name": "mobile-app-build-ios"
+        },
+        "definitions": {
+          "id": "",
+          "name": ""
+        },
+        "IsMultiDefinitionType": {
+          "id": "False",
+          "name": "False"
+        },
+        "project": {
+          "id": "$ProjectId$",
+          "name": "$ProjectName$"
+        },
+        "repository": {
+          "id": "",
+          "name": ""
+        }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [
+    {
+      "artifactAlias": "_mobile-app",
+      "triggerConditions": [
+        {
+          "sourceBranch": "",
+          "tags": [
+            "test",
+            "development",
+            "ios",
+            "google"
+          ],
+          "tagFilter": null,
+          "useBuildDefinitionBranch": false,
+          "createReleaseOnBuildTagging": true
+        }
+      ],
+      "triggerType": "artifactSource"
+    }
+  ],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseClone"
+    },
+    "IntegrateBoardsWorkItems": {
+      "$type": "System.String",
+      "$value": "False"
+    },
+    "IntegrateJiraWorkItems": {
+      "$type": "System.String",
+      "$value": "false"
+    }
+  },
+  "id": "",
+  "name": "development-ios-google-app",
+  "path": "\\AppCenter",
+  "projectReference": null,
+  "url": "",
+  "_links": "{}"
+}

@@ -1,0 +1,15 @@
+{
+  "data": {},
+  "name": "development-ios-app",
+  "type": "vsmobilecenter",
+  "url": "https://api.appcenter.ms/v0.1",
+  "authorization": {
+    "parameters": {
+      "apitoken": "apitoken"
+    },
+    "scheme": "Token"
+  },
+  "isShared": false,
+  "isReady": true,
+  "owner": "Library"
+}

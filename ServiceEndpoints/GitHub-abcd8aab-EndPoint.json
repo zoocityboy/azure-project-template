@@ -1,0 +1,16 @@
+{
+  "data": {
+
+  },
+  "name": "GitHub_abcd8aab",
+  "type": "git",
+  "url": "https://dev.azure.com/hci-iap/project-template/_git/mobile_uikit",
+  "authorization": {
+    "scheme": "UsernamePassword",
+    "parameters": {
+      "username": "$GitUserName$",
+      "password": "$GitUserPassword$"
+    }
+  },
+  "isReady": true
+}

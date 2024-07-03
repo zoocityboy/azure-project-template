@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "gitSource": {
+      "url": "https://dev.azure.com/hci-iap/project-template/_git/mobile_app"
+    },
+    "serviceEndpointId": "$mobile_app-code$",
+    "deleteServiceEndpointAfterImportIsDone": true
+  }
+}

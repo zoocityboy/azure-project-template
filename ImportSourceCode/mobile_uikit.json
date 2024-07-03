@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "gitSource": {
+      "url": "https://dev.azure.com/hci-iap/project-template/_git/mobile_uikit"
+    },
+    "serviceEndpointId": "$mobile_uikit-code$",
+    "deleteServiceEndpointAfterImportIsDone": true
+  }
+}

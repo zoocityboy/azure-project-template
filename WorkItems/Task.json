@@ -1,0 +1,327 @@
+{
+  "count": 8,
+  "value": [
+    {
+      "id": 133891,
+      "rev": 4,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T07:50:41.36Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:13:41.97Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "1. hci-iap service connection",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": "<div>add a new PAT to the service connection<br><br><p>Go to Project settings -&gt; Service connections -&gt; <strong>hci-iap connection </strong><strong>and edit </strong> </p><p>Put a new PAT to the Personal Access Token field and `Verify and save` </p><img src=\"https://beta.appflowy.cloud/api/file_storage/fede151c-96e7-4bf7-92cb-9a02def510bc/blob/16216504935384483731.png\" width=791.82421875 align=left><br> </div>",
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133889",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133891"
+    },
+    {
+      "id": 133892,
+      "rev": 3,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T07:52:18.69Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:16:21.06Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "2. Add android keystore to Library",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": "<div><p>Because we don't want to store important build information directly in the application codebase, we use Library and the values are added to the build when the application is built. </p> </div><div><div style=\"margin-top:14px;margin-bottom:14px;\"><img src=\"https://beta.appflowy.cloud/api/file_storage/fede151c-96e7-4bf7-92cb-9a02def510bc/blob/17288052204276579316.png\" width=747.03125 align=left><br> </div> </div><div style=\"margin-top:14px;margin-bottom:14px;\"><h2>Variable groups </h2><p>app_signing_android_ </p><p> </p><p>group of variables that are used for signing the application. After creating a new project, the important fields are overflowed with the text <strong>replaceMe.</strong> </p><p>Create a new kestore with the name upload.jks and the key alias upload </p><p> (<a href=\"https://developer.android.com/studio/publish/app-signing\">https://developer.android.com/studio/publish/app-signing</a>) </p><p>Upravte pole ANDROID_KEYSTORE_PASSWORD a ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD </p>```bash<br><span># replace &quot;s+rp^W_X$/Y&gt;d`ft]6SV;m&quot; with your strong password<br></span><div>keytool -genkey -v \\<br> </div><div>-keystore upload.jks \\<br> </div><div>-alias upload \\<br> </div><div>-storepass &quot;s+rp^W_X$/Y&gt;d`ft]6SV;m&quot; \\<br> </div><div>-keypass &quot;s+rp^W_X$/Y&gt;d`ft]6SV;m&quot; \\<br> </div><div>-keyalg RSA \\<br> </div><div>-keysize 2048 \\<br> </div><div>-validity 20000 \\<br> </div><span>-dname &quot;CN=Embedit Developer, OU=Platform, O=Embedit, L=Prague, c=CZ&quot;</span><br>```<br><h2>Secure files </h2><div style=\"margin-top:14px;margin-bottom:14px;\"><strong>In the previous step you created a new file <strong>upload.jks</strong><strong> this file needs to be uploaded to Library -&gt; Secure files</strong></strong> </div><img src=\"https://beta.appflowy.cloud/api/file_storage/fede151c-96e7-4bf7-92cb-9a02def510bc/blob/7861416250109420565.png\" width=751.0 align=left><br> </div>",
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133889",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133892"
+    },
+    {
+      "id": 133893,
+      "rev": 2,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T07:52:40.24Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T07:53:21.987Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "3. Add provisioning profile and certificate",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133889",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133893"
+    },
+    {
+      "id": 133894,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T07:53:54.627Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T07:53:54.627Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "4. Mobile app repository settings",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133889",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133894"
+    },
+    {
+      "id": 133952,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T11:10:44.81Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:10:44.81Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "1. Install eli",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133890",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133952"
+    },
+    {
+      "id": 133953,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T11:10:50.717Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:10:50.717Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "2. create a new app",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133890",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133953"
+    },
+    {
+      "id": 133954,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T11:11:02.55Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:11:02.55Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "3. create a first Pull request",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133890",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133954"
+    },
+    {
+      "id": 133955,
+      "rev": 1,
+      "fields": {
+        "System.AreaPath": "project-template",
+        "System.TeamProject": "project-template",
+        "System.IterationPath": "$ProjectName$\\Iteration 1",
+        "System.WorkItemType": "Task",
+        "System.State": "New",
+        "System.Reason": "New",
+        "System.CreatedDate": "2024-07-02T11:11:13.143Z",
+        "System.CreatedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.ChangedDate": "2024-07-02T11:11:13.143Z",
+        "System.ChangedBy": "Lukas Svoboda <e-Lukas.Svoboda@embedit.com>",
+        "System.Title": "4. release a new minor version",
+        "Microsoft.VSTS.Scheduling.Effort": 0.0,
+        "System.Description": null,
+        "System.AssignedTo": null,
+        "Microsoft.VSTS.Scheduling.RemainingWork": 0.0,
+        "Microsoft.VSTS.Common.Priority": 2.0,
+        "System.BoardLane": null,
+        "System.Tags": null,
+        "Microsoft.VSTS.TCM.Steps": null,
+        "Microsoft.VSTS.TCM.Parameters": null,
+        "Microsoft.VSTS.TCM.LocalDataSource": null,
+        "Microsoft.VSTS.TCM.AutomationStatus": null,
+        "System.History": null
+      },
+      "relations": [
+        {
+          "rel": "System.LinkTypes.Hierarchy-Reverse",
+          "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133890",
+          "attributes": {
+            "isLocked": "false",
+            "name": "Parent"
+          }
+        }
+      ],
+      "url": "https://dev.azure.com/hci-iap/_apis/wit/workItems/133955"
+    }
+  ],
+  "HttpStatusCode": 0,
+  "Message": null
+}

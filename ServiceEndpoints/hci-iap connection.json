@@ -1,0 +1,15 @@
+{
+  "data": {},
+  "name": "hci-iap connection",
+  "type": "externaltfs",
+  "url": "https://hci-iap@dev.azure.com/hci-iap",
+  "authorization": {
+    "parameters": {
+      "apitoken": "apitoken"
+    },
+    "scheme": "Token"
+  },
+  "isShared": false,
+  "isReady": true,
+  "owner": "Library"
+}

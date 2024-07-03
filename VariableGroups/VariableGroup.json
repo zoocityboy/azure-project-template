@@ -1,0 +1,211 @@
+{
+  "count": 10,
+  "value": [
+    {
+      "variables": {
+        "ADHOC_EXPORT_OPTIONS": {
+          "value": "ios/AdHocExportOptionsProd.plist"
+        },
+        "ADHOC_MOBILEPROVISION_FILENAME": {
+          "value": "replaceMe.mobileprovision"
+        },
+        "ADHOC_MOBILEPROVISION_NAME": {
+          "value": "replaceMe"
+        },
+        "CERTIFICATE_FILENAME": {
+          "value": "Certificates.p12"
+        },
+        "CERTIFICATE_PASSWORD": {
+          "value": "replaceMe"
+        },
+        "RELEASE_MOBILEPROVISION_FILENAME": {
+          "value": "replaceMe"
+        },
+        "RELEASE_MOBILEPROVISION_NAME": {
+          "value": "replaceMe"
+        },
+        "RELEASE_EXPORT_OPTIONS": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "65",
+      "type": "Vsts",
+      "name": "app_signing_ios_production",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "ADHOC_EXPORT_OPTIONS": {
+          "value": "ios/AdHocExportOptionsDev.plist"
+        },
+        "ADHOC_MOBILEPROVISION_FILENAME": {
+          "value": "replaceMe.mobileprovision"
+        },
+        "ADHOC_MOBILEPROVISION_NAME": {
+          "value": "replaceMe"
+        },
+        "CERTIFICATE_FILENAME": {
+          "value": "Certificates.p12"
+        },
+        "CERTIFICATE_PASSWORD": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "64",
+      "type": "Vsts",
+      "name": "app_signing_ios_staging",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "ADHOC_EXPORT_OPTIONS": {
+          "value": "ios/AdHocExportOptionsDev.plist"
+        },
+        "ADHOC_MOBILEPROVISION_FILENAME": {
+          "value": "replaceMe.mobileprovision"
+        },
+        "ADHOC_MOBILEPROVISION_NAME": {
+          "value": "replaceMe"
+        },
+        "CERTIFICATE_FILENAME": {
+          "value": "Certificates.p12"
+        },
+        "CERTIFICATE_PASSWORD": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "63",
+      "type": "Vsts",
+      "name": "app_signing_ios_development",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "ANDROID_KEYSTORE_ALIAS": {
+          "value": "upload"
+        },
+        "ANDROID_KEYSTORE_PASSWORD": {
+          "value": "replaceMe"
+        },
+        "ANDROID_KEYSTORE_PATH": {
+          "value": "upload.jks"
+        },
+        "ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "62",
+      "type": "Vsts",
+      "name": "app_signing_android_production",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "ANDROID_KEYSTORE_ALIAS": {
+          "value": "upload"
+        },
+        "ANDROID_KEYSTORE_PASSWORD": {
+          "value": "replaceMe"
+        },
+        "ANDROID_KEYSTORE_PATH": {
+          "value": "upload.jks"
+        },
+        "ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "61",
+      "type": "Vsts",
+      "name": "app_signing_android_staging",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "ANDROID_KEYSTORE_ALIAS": {
+          "value": "upload"
+        },
+        "ANDROID_KEYSTORE_PASSWORD": {
+          "value": "replaceMe"
+        },
+        "ANDROID_KEYSTORE_PATH": {
+          "value": "upload.jks"
+        },
+        "ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "60",
+      "type": "Vsts",
+      "name": "app_signing_android_development",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "APP_CENTER_ANDROID_HUAWEI_SECRET": {
+          "value": "replaceMe"
+        },
+        "APP_CENTER_ANDROID_SECRET": {
+          "value": "replaceMe"
+        },
+        "APP_CENTER_IOS_SECRET": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "47",
+      "type": "Vsts",
+      "name": "secrets-production",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "APP_CENTER_ANDROID_HUAWEI_SECRET": {
+          "value": "replaceMe"
+        },
+        "APP_CENTER_ANDROID_SECRET": {
+          "value": "replaceMe"
+        },
+        "APP_CENTER_IOS_SECRET": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "46",
+      "type": "Vsts",
+      "name": "secrets-staging",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "APP_CENTER_ANDROID_HUAWEI_SECRET": {
+          "value": "replaceMe"
+        },
+        "APP_CENTER_ANDROID_SECRET": {
+          "value": "replaceMe"
+        },
+        "APP_CENTER_IOS_SECRET": {
+          "value": "replaceMe"
+        }
+      },
+      "id": "45",
+      "type": "Vsts",
+      "name": "secrets-development",
+      "isShared": false
+    },
+    {
+      "variables": {
+        "platform_package_store": {
+          "value": "https://gitea.xops.cz/api/packages/platform/pub/"
+        },
+        "platform_package_token": {
+          "value": "0ddd00c72d32f78f248285688fd9a70a19253847"
+        },
+        "project_package_store": {
+          "value": "https://gitea.xops.cz/api/packages/yettel/pub/"
+        }
+      },
+      "id": "42",
+      "type": "Vsts",
+      "name": "platform_packages",
+      "isShared": false
+    }
+  ]
+}

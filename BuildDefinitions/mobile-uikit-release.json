@@ -1,0 +1,68 @@
+{
+  "triggers": [
+    {
+      "branchFilters": [],
+      "pathFilters": [],
+      "settingsSourceType": 2,
+      "batchChanges": false,
+      "maxConcurrentBuildsPerBranch": 1,
+      "triggerType": "continuousIntegration"
+    }
+  ],
+  "properties": {},
+  "tags": [],
+  "_links": "{}",
+  "jobAuthorizationScope": "projectCollection",
+  "jobTimeoutInMinutes": 60,
+  "jobCancelTimeoutInMinutes": 5,
+  "process": {
+    "yamlFilename": ".azuredevops/azure-pipelines-release.yml",
+    "type": 2
+  },
+  "repository": {
+    "properties": {
+      "cloneUrl": "https://$Organization$@dev.azure.com/$Organization$/$ProjectName$/_git/mobile_uikit",
+      "fullName": "mobile-uikit",
+      "defaultBranch": "refs/heads/main",
+      "isFork": "False",
+      "safeRepository": "$mobile_uikit$",
+      "reportBuildStatus": "true",
+      "fetchDepth": "1"
+    },
+    "id": "$mobile_uikit$",
+    "type": "TfsGit",
+    "name": "mobile_uikit",
+    "url": "https://$Organization$@dev.azure.com/$Organization$/$ProjectName$/_git/mobile_uikit",
+    "defaultBranch": "refs/heads/main",
+    "clean": null,
+    "checkoutSubmodules": false
+  },
+  "quality": "definition",
+  "authoredBy": "{}",
+  "drafts": [],
+  "queue": {
+    "_links": {
+      "self": {
+        "href": "https://dev.azure.com/$Organization$/_apis/build/Queues/$Azure Pipelines$"
+      }
+    },
+    "id": "$Azure Pipelines$",
+    "name": "Azure Pipelines",
+    "url": "https://dev.azure.com/$Organization$/_apis/build/Queues/$Azure Pipelines$",
+    "pool": {
+      "id": "",
+      "name": "Azure Pipelines",
+      "isHosted": true
+    }
+  },
+  "id": "",
+  "name": "mobile-uikit-release",
+  "url": "",
+  "uri": "",
+  "path": "\\Mobile\\Packages",
+  "type": "build",
+  "queueStatus": "enabled",
+  "revision": 2,
+  "createdDate": "",
+  "project": "{}"
+}
